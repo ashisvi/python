@@ -1,4 +1,4 @@
-from random import random
+import random
 
 """ Guess the number game """
 
@@ -7,7 +7,7 @@ end = 50
 
 
 def play(start=1, end=50):
-    random_num = int((random() * end) + start)
+    random_num = random.randint(start, end)
     lives = 10
 
     print(f"Guess the number between {start} to {end}:", end=" ")
